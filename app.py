@@ -18,9 +18,6 @@ def home():
   
     return render_template("index.html")
 #------------------------------About us-------------------------------------------
-@app.route('/aboutusnew')
-def aboutusnew():
-    return render_template('aboutusnew.html')
 
 
 
@@ -31,10 +28,7 @@ def Major():
   return render_template('Major.html') 
 
 
-@app.route('/Minor')
-def Minor():
-  
-  return render_template('Minor.html') 
+
 
 @app.route('/predict',methods=['GET'])
 def predict():
